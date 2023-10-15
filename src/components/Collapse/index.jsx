@@ -6,7 +6,7 @@ function Collapse({ collnum, title, texto }) {
   const [isOpen1, setOP1] = useState(false)
   const [isOpen2, setOP2] = useState(false)
   const [isOpen3, setOP3] = useState(false)
-  const [isOpenArrow, setOpenArrow] = useState(false)
+  const [isOpenArrow, setOpenArrow] = useState(true)
   var ostat = false
   var cn = { collnum }.collnum
   switch (cn) {
@@ -63,7 +63,7 @@ function Collapse({ collnum, title, texto }) {
         </div>
         <p
           className={
-            isOpenArrow
+            ostat
               ? 'collaps-frame2__p2 collaps-frame2__show'
               : 'collaps-frame2__p2 collaps-frame2__hide'
           }
