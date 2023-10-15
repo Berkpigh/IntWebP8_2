@@ -1,0 +1,32 @@
+.error {
+    width: 1440px;
+    height: 832px;
+    margin: 50px 0 50px 0;
+    &-frame {
+        height: 832px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        &__p1 {
+            font-family: Montserrat;
+            font-size: 288px;
+            font-weight: 700;
+            color: rgba(255, 96, 96, 1);
+            margin-block: 0;
+        }
+        &__p2 {
+            font-family: Montserrat;
+            font-size: 36px;
+            font-weight: 500;
+            color: rgba(255, 96, 96, 1);
+            margin-block: 0;
+        }
+        &__back {
+            font-family: Montserrat;
+            font-size: 18px;
+            font-weight: 500;
+            color: rgba(255, 96, 96, 1);
+        }
+    }
+}

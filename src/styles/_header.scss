@@ -1,0 +1,20 @@
+.header-header {
+    margin-left: 100px;
+    width: 1240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-nav {
+    width: 309px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-links {
+    text-decoration: none;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 24px;
+    color: rgba(255, 96, 96, 1);
+}
