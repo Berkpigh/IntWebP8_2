@@ -22,15 +22,6 @@ function Card() {
       <div>
         <LeftArrow />
       </div>
-      <ul className="card-ul">
-        {locationList
-          .filter((locL, index) => index >= curI && index < curM)
-          .map(({ id, title }) => (
-            <div key={id}>
-              <LocationItem title={title} />
-            </div>
-          ))}
-      </ul>
       <div>
         <RightArrow />
       </div>
