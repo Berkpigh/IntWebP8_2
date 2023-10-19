@@ -1,0 +1,12 @@
+.logement {
+    width: 1240px;
+    height: 643px;
+    margin-left: 100px;
+    &-carousel {
+        width: 1240px;
+        height: 415px;
+        &__img {
+            object-fit: cover;
+        }
+    }
+}
