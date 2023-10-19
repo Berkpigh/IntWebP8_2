@@ -6,6 +6,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Home from '../pages/Home'
 import Apropos from '../pages/Apropos'
+import Logement from '../pages/Logement'
 import Error from '../components/Error'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Apropos" element={<Apropos />} />
+          <Route path="/Logement/:logId" element={<Logement />} />
           <Route path="*" element={<Error />} />
         </Routes>
         <Footer />
