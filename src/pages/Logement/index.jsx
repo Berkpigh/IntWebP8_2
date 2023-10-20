@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom'
 import { useState } from 'react'
 import locationList from '../../data/vingtannonces.json'
+import LogRating from '../../components/LogRating'
 
 function Logement() {
   const { logId } = useParams()
@@ -33,7 +34,7 @@ function Logement() {
     setimgNum(pICur)
   }
   const tagArr = logX.tags
-
+  const logRating = parseInt(logX.rating)
   return (
     <div className="logement">
       <div className="logement-carousel">
@@ -97,7 +98,13 @@ function Logement() {
               </div>
             ))}
           </div>
-          <div className="logement-section__l2-rate"></div>
+          <div className="logement-section__l2-rate">
+            <LogRating starNum={0} lr={logRating} />
+            <LogRating starNum={1} lr={logRating} />
+            <LogRating starNum={2} lr={logRating} />
+            <LogRating starNum={3} lr={logRating} />
+            <LogRating starNum={4} lr={logRating} />
+          </div>
         </div>
         <div className="logement-section__l3">
           <div className="logement-section__l3-desc"></div>
