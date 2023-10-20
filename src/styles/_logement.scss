@@ -2,8 +2,11 @@
     width: 1240px;
     height: 643px;
     margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     &-carousel {
-        position: absolute;
         width: 1240px;
         height: 415px;
         &__img {
@@ -39,6 +42,101 @@
             text-align: center;
             color: rgba(255, 255, 255, 1);
             z-index: 1;
+        }
+    }
+    &-section {
+        height: 228px;
+        width: 1240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        &__l1 {
+            width: 1240px;
+            height: 77px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &-tit {
+                width: 635px;
+                height: 77px;
+            }
+            &-tit1 {
+                width: 635px;
+                font-family: Montserrat;
+                font-size: 36px;
+                font-weight: 500;
+                color: rgba(255, 96, 96, 1);
+                margin-block: 0;
+            }
+            &-tit2 {
+                width: 176px;
+                font-family: Montserrat;
+                font-size: 18px;
+                font-weight: 500;
+                color: rgba(255, 96, 96, 1);
+                margin-block: 0;
+            }
+            &-host {
+                width: 167px;
+                height: 64px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &-name {
+                    width: 93px;
+                    height: 52px;
+                    font-family: Montserrat;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: rgba(255, 96, 96, 1);
+                    margin-block: 0;
+                }
+                &-img {
+                    width: 64px;
+                    height: 64px;
+                }
+            }
+        }
+        &__l2 {
+            width: 124px;
+            height: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+            &-tags {
+                width: 365px;
+                height: 25px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: rgba(255, 96, 96, 1);
+            }
+            &-rates {
+                width: 196px;
+                height: 36px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: rgba(255, 96, 96, 1);
+            }         
+        }
+        &__l3 {
+            width: 1240px;
+            height: 52px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;             
+            &-desc {
+                width: 582px;
+                height: 52px;
+                background: rgba(255, 96, 96, 1);
+            }
+            &-equip {
+                width: 582px;
+                height: 52px;
+                background: rgba(255, 96, 96, 1);
+            }
         }
     }
 }

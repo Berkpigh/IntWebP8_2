@@ -72,6 +72,30 @@ function Logement() {
           {pICur + 1}/{pIMax + 1}
         </p>
       </div>
+      <div className="logement-section">
+        <div className="logement-section__l1">
+          <div className="logement-section__l1-tit">
+            <p className="logement-section__l1-tit1">{logX.title}</p>
+            <p className="logement-section__l1-tit2">{logX.location}</p>
+          </div>
+          <div className="logement-section__l1-host">
+            <p className="logement-section__l1-host-name">{logX.host.name}</p>
+            <img
+              src={logX.host.picture}
+              alt="host"
+              className="logement-section__l1-host-img"
+            />
+          </div>
+        </div>
+        <div className="logement-section__l2">
+          <div className="logement-section__l2-tags"></div>
+          <div className="logement-section__l2-rate"></div>
+        </div>
+        <div className="logement-section__l3">
+          <div className="logement-section__l3-desc"></div>
+          <div className="logement-section__l3-equip"></div>
+        </div>
+      </div>
     </div>
   )
 }
