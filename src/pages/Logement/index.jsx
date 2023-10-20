@@ -32,6 +32,8 @@ function Logement() {
     }
     setimgNum(pICur)
   }
+  const tagArr = logX.tags
+
   return (
     <div className="logement">
       <div className="logement-carousel">
@@ -89,8 +91,11 @@ function Logement() {
         </div>
         <div className="logement-section__l2">
           <div className="logement-section__l2-tags">
-            <logTags tg={logX.tags} />
-            {/* {logX.tags} */}
+            {tagArr.map((tag, index) => (
+              <div key={index} className="logement-section__l2-tag">
+                <div className="logement-section__l2-tag-p">{tag}</div>
+              </div>
+            ))}
           </div>
           <div className="logement-section__l2-rate"></div>
         </div>

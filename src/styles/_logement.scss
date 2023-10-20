@@ -98,7 +98,7 @@
             }
         }
         &__l2 {
-            width: 124px;
+            width: 1240px;
             height: 25px;
             display: flex;
             justify-content: space-between;
@@ -107,17 +107,33 @@
                 width: 365px;
                 height: 25px;
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-around;
                 align-items: center;
-                background: rgba(255, 96, 96, 1);
             }
-            &-rates {
+            &-tag {
+                width: 115px;
+                height: 25px;
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-weight: 500;
+                color: rgba(255, 255, 255, 1);
+                background: rgba(255, 96, 96, 1);
+                margin-right: 10px;
+                border-radius: 10px;
+                &-p {
+                    height: 15px;
+                    margin-top: 8px;
+                    margin-block: 0;
+                }
+            }
+            &-rate {
                 width: 196px;
                 height: 36px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                background: rgba(255, 96, 96, 1);
+                //background: rgba(255, 96, 96, 1);
             }         
         }
         &__l3 {
