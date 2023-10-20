@@ -88,7 +88,10 @@ function Logement() {
           </div>
         </div>
         <div className="logement-section__l2">
-          <div className="logement-section__l2-tags"></div>
+          <div className="logement-section__l2-tags">
+            <logTags tg={logX.tags} />
+            {/* {logX.tags} */}
+          </div>
           <div className="logement-section__l2-rate"></div>
         </div>
         <div className="logement-section__l3">
