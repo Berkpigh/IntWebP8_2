@@ -110,7 +110,6 @@ function Logement() {
           </div>
         </div>
         <div className="logement-section__l3">
-          <div className="logement-section__l3-desc"></div>
           <Description desc={logX.description} />
           <Equipments eq={logX.equipments} />/
         </div>

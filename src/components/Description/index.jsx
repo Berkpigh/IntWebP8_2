@@ -12,7 +12,7 @@ function Description({ desc }) {
         <p className="description-p">Description</p>
         <svg
           className="description-svg"
-          onClick={() => inverseArrowPos}
+          onClick={() => inverseArrowPos()}
           width="24"
           height="14"
           viewBox="0 0 24 14"
