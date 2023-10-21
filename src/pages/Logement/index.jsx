@@ -112,12 +112,7 @@ function Logement() {
         <div className="logement-section__l3">
           <div className="logement-section__l3-desc"></div>
           <Description desc={logX.description} />
-          <div className="logement-section__l3-equip"></div>
-          {logX.equipments.map((equip, index) => (
-            <div key={index}>
-              <Equipments eq={equip} />
-            </div>
-          ))}
+          <Equipments eq={logX.equipments} />/
         </div>
       </div>
     </div>
