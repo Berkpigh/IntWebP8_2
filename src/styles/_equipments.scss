@@ -1,0 +1,23 @@
+.equipments {
+    width: 582px;
+    height: 32px;
+    background: rgba(255, 96, 96, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 5px 5px;
+    padding: 10px 20px 10px 10px;
+    &-p {
+        width: 582px;
+        height: 32px;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 1);
+        margin-block: 0;
+    }
+    &-svg {
+        width: 32px;
+        height: 32px;
+    }
+}

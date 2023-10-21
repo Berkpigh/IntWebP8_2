@@ -1,36 +1,7 @@
-.collaps {
-    position: relative;
+.collapse {
     width: 1023px;
     height: 298px;
-    &-rect {
-        position: absolute;
-        width: 1023px;
-        height: 52px;
-        background: rgba(255, 96, 96, 1);
-        border-radius: 10px 10px 5px 5px;
-        &__p {
-            position: relative;
-            top: -10px;
-            left: 10px;
-            width: 956px;
-            font-family: Montserrat;
-            font-size: 24px;
-            font-weight: 500;
-            color: rgba(255, 255, 255, 1);
-        }
-        &__svg {
-            position: relative;
-            top: -65px;
-            left: 966px;
-            width: 30px;
-            &:hover {
-                transform: rotate(180deg);
-            }
-        }
-    }
     &-frame2 {
-        //position: absolute;
-        //width: 1023px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -44,6 +15,7 @@
             font-size: 24px;
             font-weight: 500;
             color: rgba(255, 255, 255, 1);
+            margin-block: 0;
         }
         &__svg {
             width: 30px;
@@ -52,13 +24,12 @@
             }
         }
         &__p2 {
-            //position: relative;
-            //top: -104px;
             left: 20px;
             width: 1100px;
             font-family: Montserrat;
             font-size: 18px;
             font-weight: 400;
+            margin-block: 0;
         }
         &__show {
             display: block;

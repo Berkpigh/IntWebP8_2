@@ -40,12 +40,12 @@ function Collapse({ collnum, title, texto }) {
   }
   // console.log(cn, ostat)
   return (
-    <div className="collaps">
+    <div className="collapse">
       <div>
-        <div className="collaps-frame2">
-          <p className="collaps-frame2__p1">{title}</p>
+        <div className="collapse-frame2">
+          <p className="collapse-frame2__p1">{title}</p>
           <svg
-            className="collaps-frame2__svg"
+            className="collapse-frame2__svg"
             onClick={() => openClose(cn)}
             width="33"
             height="32"
@@ -64,8 +64,8 @@ function Collapse({ collnum, title, texto }) {
         <p
           className={
             ostat
-              ? 'collaps-frame2__p2 collaps-frame2__show'
-              : 'collaps-frame2__p2 collaps-frame2__hide'
+              ? 'collapse-frame2__p2 collapse-frame2__show'
+              : 'collapse-frame2__p2 collapse-frame2__hide'
           }
         >
           {texto}

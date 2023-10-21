@@ -1,7 +1,10 @@
 import { useParams } from 'react-router-dom'
 import { useState } from 'react'
 import locationList from '../../data/vingtannonces.json'
+import LogTags from '../../components/LogTags'
 import LogRating from '../../components/LogRating'
+import Description from '../../components/Description'
+import Equipments from '../../components/Equipments'
 
 function Logement() {
   const { logId } = useParams()
@@ -93,8 +96,8 @@ function Logement() {
         <div className="logement-section__l2">
           <div className="logement-section__l2-tags">
             {tagArr.map((tag, index) => (
-              <div key={index} className="logement-section__l2-tag">
-                <div className="logement-section__l2-tag-p">{tag}</div>
+              <div key={index}>
+                <LogTags tg={tag} />
               </div>
             ))}
           </div>
@@ -108,7 +111,13 @@ function Logement() {
         </div>
         <div className="logement-section__l3">
           <div className="logement-section__l3-desc"></div>
+          <Description desc={logX.description} />
           <div className="logement-section__l3-equip"></div>
+          {logX.equipments.map((equip, index) => (
+            <div key={index}>
+              <Equipments eq={equip} />
+            </div>
+          ))}
         </div>
       </div>
     </div>

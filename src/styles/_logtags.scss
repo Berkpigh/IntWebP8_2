@@ -1,0 +1,19 @@
+.logtags {
+    width: 115px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 96, 96, 1);
+    border-radius: 10px;
+    &-p {
+        height: 15px;
+        margin-top: 8px;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 1);
+        margin-block: 0;
+    }
+}
+
