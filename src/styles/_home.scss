@@ -12,6 +12,9 @@
         list-style-type: none;
         display: flex;
         flex-wrap: wrap;
+        &__a {
+            text-decoration: none;
+        }
         &__li {
             width: 340px;
             height: 340px;
@@ -27,7 +30,6 @@
                 font-weight: 500;
                 font-size: 18px;
                 color: white;
-                //color: rgba(255, 255, 255, 1);
             }
         }
     }
