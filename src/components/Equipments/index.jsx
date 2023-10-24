@@ -1,10 +1,8 @@
 import React from 'react'
-import { useState } from 'react'
 
-function Equipments({ eq }) {
-  const [arrowDown, setarrowPos] = useState(false)
+function Equipments({ equi, eA, seA, sA }) {
   function inverseArrowPos() {
-    arrowDown ? setarrowPos(false) : setarrowPos(true)
+    eA ? seA(false) : seA(true)
   }
   return (
     <React.Fragment>
@@ -28,7 +26,7 @@ function Equipments({ eq }) {
         </div>
         <ul
           className={
-            arrowDown
+            eA
               ? 'equipments-equipments equipments-equipments__show'
               : 'equipments-equipments equipments-equipments__hide'
           }

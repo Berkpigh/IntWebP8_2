@@ -9,6 +9,9 @@ import Equipments from '../../components/Equipments'
 function Logement() {
   const { logId } = useParams()
   const [imgNum, setimgNum] = useState(0)
+  const [descArrowDown, setdescArrow] = useState(false)
+  const [equiArrowDown, setequiArrow] = useState(false)
+
   function getLog() {
     for (let i = 0; i < locationList.length; i++) {
       if (locationList[i].id === { logId }.logId) {
@@ -110,8 +113,20 @@ function Logement() {
           </div>
         </div>
         <div className="logement-section__l3">
-          <Description desc={logX.description} />
-          <Equipments eq={logX.equipments} />/
+          <Description
+            desc={logX.description}
+            dA={descArrowDown}
+            sdA={setdescArrow}
+            eQ={equiArrowDown}
+          />
+          <Equipments
+            equi={logX.equipments}
+            eQ={equiArrowDown}
+            seA={setequiArrow}
+            sdA={setdescArrow}
+            dA={descArrowDown}
+          />
+          /
         </div>
       </div>
     </div>

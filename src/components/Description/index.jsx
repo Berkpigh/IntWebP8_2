@@ -1,10 +1,8 @@
 import React from 'react'
-import { useState } from 'react'
 
-function Description({ desc }) {
-  const [arrowDown, setarrowPos] = useState(false)
+function Description({ desc, aD, sdA, eQ }) {
   function inverseArrowPos() {
-    arrowDown ? setarrowPos(false) : setarrowPos(true)
+    aD ? sdA(false) : sdA(true)
   }
   return (
     <React.Fragment>
