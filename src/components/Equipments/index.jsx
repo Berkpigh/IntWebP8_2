@@ -31,7 +31,7 @@ function Equipments({ equi, eA, seA, sA }) {
               : 'equipments-equipments equipments-equipments__hide'
           }
         >
-          {eq.map((equi, index) => (
+          {equi.map((equi, index) => (
             <li key={index}>{equi}</li>
           ))}
         </ul>
