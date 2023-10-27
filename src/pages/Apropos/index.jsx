@@ -1,6 +1,7 @@
 import React from 'react'
 import Banner from '../../components/Banner'
 import Collapse from '../../components/Collapse'
+import Footer from '../../components/Footer'
 import apropimg from '../../assets/Aprop.png'
 
 function Apropos() {
@@ -24,6 +25,7 @@ function Apropos() {
         <Collapse collnum={2} title="Service" texto={Serv} />
         <Collapse collnum={3} title="Sécurité" texto={Secu} />
       </div>
+      <Footer upDown={0} up1Down2={0} />
     </React.Fragment>
   )
 }

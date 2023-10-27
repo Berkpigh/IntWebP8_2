@@ -1,8 +1,17 @@
 import React from 'react'
 
-function Equipments({ equi, eA, seA, sA }) {
+function Equipments({
+  equi,
+  equiArr,
+  sequiArr,
+  descArr,
+  uD,
+  suD,
+  u1D2,
+  su1D2,
+}) {
   function inverseArrowPos() {
-    eA ? seA(false) : seA(true)
+    equiArr ? sequiArr(false) : sequiArr(true)
   }
   return (
     <React.Fragment>
@@ -26,7 +35,7 @@ function Equipments({ equi, eA, seA, sA }) {
         </div>
         <ul
           className={
-            eA
+            equiArr
               ? 'equipments-equipments equipments-equipments__show'
               : 'equipments-equipments equipments-equipments__hide'
           }

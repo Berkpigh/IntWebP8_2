@@ -6,11 +6,14 @@ import LogTags from '../../components/LogTags'
 import LogRating from '../../components/LogRating'
 import Description from '../../components/Description'
 import Equipments from '../../components/Equipments'
+import Footer from '../../components/Footer'
 
 function Logement() {
   const { logId } = useParams()
   const [descArrowDown, setdescArrow] = useState(false)
   const [equiArrowDown, setequiArrow] = useState(false)
+  const [upDown, setupDown] = useState(0)
+  const [up1Down2, setup1Down2] = useState(0)
 
   function getLog() {
     for (let i = 0; i < locationList.length; i++) {
@@ -62,20 +65,28 @@ function Logement() {
         <div className="logement-section__l3">
           <Description
             desc={logX.description}
-            dA={descArrowDown}
-            sdA={setdescArrow}
-            eQ={equiArrowDown}
+            descArr={descArrowDown}
+            sdescArr={setdescArrow}
+            equiArr={equiArrowDown}
+            uD={upDown}
+            suD={setupDown}
+            u1D2={up1Down2}
+            su1D2={setup1Down2}
           />
           <Equipments
             equi={logX.equipments}
-            eQ={equiArrowDown}
-            seA={setequiArrow}
-            sdA={setdescArrow}
-            dA={descArrowDown}
+            equiArr={equiArrowDown}
+            sequiArr={setequiArrow}
+            descArr={descArrowDown}
+            uD={upDown}
+            suD={setupDown}
+            u1D2={up1Down2}
+            su1D2={setup1Down2}
           />
           /
         </div>
       </div>
+      <Footer upDown={0} up1Down2={0} />
     </div>
   )
 }

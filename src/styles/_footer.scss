@@ -1,4 +1,4 @@
-.footer-main {
+.footer {
     width: 1440px;
     height: 209px;
     display: flex;
@@ -6,11 +6,27 @@
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 1);
-    margin-top: 100px;
-}
-.footer-p {
+    &-gap {
+        width: 1440px;
+        &__0 {
+            height: 0;
+        }
+        &__1 {
+            height: 100px;
+        }
+    }
+    &-p {
     font-family: Montserrat;
     font-size: 24px;
     font-weight: 500;
     background: rgba(255, 255, 255, 1);
+    }
+    &-up {
+        animation-name: footerup;
+        animation-duration: 2000ms;
+    }
+    &-down {
+        animation-name: footerdown;
+        animation-duration: 2000ms;
+    }
 }

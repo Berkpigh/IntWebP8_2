@@ -1,8 +1,17 @@
 import React from 'react'
 
-function Description({ desc, aD, sdA, eQ }) {
+function Description({
+  desc,
+  descArr,
+  sdescArr,
+  equiArr,
+  uD,
+  suD,
+  u1D2,
+  su1D2,
+}) {
   function inverseArrowPos() {
-    aD ? sdA(false) : sdA(true)
+    descArr ? sdescArr(false) : sdescArr(true)
   }
   return (
     <React.Fragment>
