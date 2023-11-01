@@ -12,8 +12,8 @@ function Logement() {
   const { logId } = useParams()
   const [descArrowDown, setdescArrow] = useState(false)
   const [equiArrowDown, setequiArrow] = useState(false)
-  const [upDown, setupDown] = useState(0)
-  const [up1Down2, setup1Down2] = useState(0)
+  const [upDownStatus, setupDownStatus] = useState(0)
+  const [upDownAction, setupDownAction] = useState(0)
 
   function getLog() {
     for (let i = 0; i < locationList.length; i++) {
@@ -68,25 +68,25 @@ function Logement() {
             descArr={descArrowDown}
             sdescArr={setdescArrow}
             equiArr={equiArrowDown}
-            uD={upDown}
-            suD={setupDown}
-            u1D2={up1Down2}
-            su1D2={setup1Down2}
+            uDS={upDownStatus}
+            setuDS={setupDownStatus}
+            uDA={upDownAction}
+            setuDA={setupDownAction}
           />
           <Equipments
             equi={logX.equipments}
             equiArr={equiArrowDown}
             sequiArr={setequiArrow}
             descArr={descArrowDown}
-            uD={upDown}
-            suD={setupDown}
-            u1D2={up1Down2}
-            su1D2={setup1Down2}
+            uDS={upDownStatus}
+            setuDS={setupDownStatus}
+            uDA={upDownAction}
+            setuDA={setupDownAction}
           />
           /
         </div>
       </div>
-      <Footer upDown={0} up1Down2={0} />
+      <Footer uDS={upDownStatus} uDA={upDownAction} />
     </div>
   )
 }

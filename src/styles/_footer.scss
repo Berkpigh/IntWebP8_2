@@ -6,14 +6,13 @@
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 1);
-    &-gap {
+    &-gap__0 {
         width: 1440px;
-        &__0 {
-            height: 0;
-        }
-        &__1 {
-            height: 100px;
-        }
+        height: 0;
+    }
+    &-gap__1 {
+        width: 1440px;
+        height: 400px;
     }
     &-p {
     font-family: Montserrat;
@@ -22,11 +21,11 @@
     background: rgba(255, 255, 255, 1);
     }
     &-up {
-        animation-name: footerup;
-        animation-duration: 2000ms;
+        //animation-name: footerup;
+        //animation-duration: 2000ms;
     }
     &-down {
-        animation-name: footerdown;
-        animation-duration: 2000ms;
+        //animation-name: footerdown;
+        //animation-duration: 2000ms;
     }
 }

@@ -1,26 +1,15 @@
 import React from 'react'
 
-function Footer({ upDown, up1Down2 }) {
-  const doNotChange = up1Down2 === upDown ? true : false
-  var sta = { upDown }.upDown
-  sta === 1 ? (sta = 2) : sta === 2 ? (sta = 1) : (sta = 0)
-  let action = 0
-  doNotChange ? (action = up1Down2) : (action = upDown)
-  //setupDown(sta)
+function Footer({ uDS, uDA }) {
+  console.log('uDS Footer: ', { uDS }, ' uDA Footer: ', { uDA })
   return (
     <React.Fragment>
+      <div className={uDS === 0 ? 'footer-gap__0' : 'footer-gap__1'}></div>
       <div
         className={
-          action === 2 || action === 0
-            ? 'footer-gap footer-gap__0'
-            : 'footer-gap footer-gap__1'
-        }
-      ></div>
-      <div
-        className={
-          doNotChange
+          uDA === 0
             ? 'footer'
-            : action === 2
+            : uDA === 2
             ? 'footer footer-down'
             : 'footer footer-up'
         }

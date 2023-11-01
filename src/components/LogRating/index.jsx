@@ -1,5 +1,5 @@
 function LogRating({ starNum, lr }) {
-  console.log({ starNum }.starNum, { lr }.lr)
+  // console.log({ starNum }.starNum, { lr }.lr)
   return (
     <div className="ratingsquare">
       {{ starNum }.starNum < { lr }.lr ? (

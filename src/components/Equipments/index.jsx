@@ -5,13 +5,15 @@ function Equipments({
   equiArr,
   sequiArr,
   descArr,
-  uD,
-  suD,
-  u1D2,
-  su1D2,
+  uDS,
+  setuDS,
+  uDA,
+  setuDA,
 }) {
   function inverseArrowPos() {
     equiArr ? sequiArr(false) : sequiArr(true)
+    descArr === equiArr ? setuDA(0) : equiArr ? setuDA(2) : setuDA(1)
+    equiArr ? setuDS(1) : setuDS(0)
   }
   return (
     <React.Fragment>
