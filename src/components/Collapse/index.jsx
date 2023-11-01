@@ -25,7 +25,7 @@ function Collapse({ collnum, title, texto }) {
       ostat = isOpen3
   }
   astat = ostat
-  console.log('A: ', cn, ostat, astat)
+  //console.log('A: ', cn, ostat, astat)
   function openClose(cn) {
     //console.log('ostat: ', ostat)
     ostat = !ostat

@@ -11,18 +11,51 @@ function Description({
   setuDA,
 }) {
   function inverseArrowPos() {
-    descArr ? sdescArr(false) : sdescArr(true)
-    descArr === equiArr ? setuDA(0) : descArr ? setuDA(2) : setuDA(1)
-    descArr ? setuDS(1) : setuDS(0)
-    console.log('uDS description: ', uDS)
+    if (descArr === true) {
+      sdescArr(false)
+      decideuDSuDA(false)
+    } else {
+      sdescArr(true)
+      decideuDSuDA(true)
+    }
   }
+  function decideuDSuDA(truefalse) {
+    if (truefalse === equiArr) {
+      setuDA(0)
+      if (truefalse) {
+        setuDS(1)
+      } else {
+        setuDS(0)
+      }
+    } else {
+      if (truefalse) {
+        setuDS(1)
+        setuDA(1)
+      } else {
+        setuDS(0)
+        setuDA(2)
+      }
+    }
+  }
+
+  console.log(
+    'description descArr: ',
+    descArr,
+    'description equiArr: ',
+    equiArr
+  )
+  console.log('description uDS: ', uDS, 'uDA: ', uDA)
   return (
     <React.Fragment>
       <div className="description">
         <div className="description-topbar">
           <p className="description-topbar__p">Description</p>
           <svg
-            className="description-topbar__svg"
+            className={
+              descArr
+                ? 'description-topbar__svg description-topbar__svg-open'
+                : 'description-topbar__svg description-topbar__svg-closed'
+            }
             onClick={() => inverseArrowPos()}
             width="24"
             height="14"

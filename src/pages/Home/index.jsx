@@ -23,7 +23,7 @@ function Home() {
         </ul>
       </div>
       <div>
-        <Footer upDownStatus={0} upDownAction={0} />
+        <Footer uDS={0} uDA={0} />
       </div>
     </React.Fragment>
   )

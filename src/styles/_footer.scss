@@ -1,6 +1,6 @@
 .footer {
     width: 1440px;
-    height: 209px;
+    //height: 209px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,11 +8,11 @@
     background: rgba(0, 0, 0, 1);
     &-gap__0 {
         width: 1440px;
-        height: 0;
+        height: 0px;
     }
     &-gap__1 {
         width: 1440px;
-        height: 400px;
+        height: 200px;
     }
     &-p {
     font-family: Montserrat;

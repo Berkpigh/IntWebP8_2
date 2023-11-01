@@ -37,6 +37,12 @@
         &__svg {
             width: 32px;
             height: 32px;
+            &-open {
+                transform : rotate(0.5turn);
+            }
+            &-closed {
+                transform : rotate(0turn);
+            }
         }
     }
 }

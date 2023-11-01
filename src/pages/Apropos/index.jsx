@@ -25,7 +25,7 @@ function Apropos() {
         <Collapse collnum={2} title="Service" texto={Serv} />
         <Collapse collnum={3} title="Sécurité" texto={Secu} />
       </div>
-      <Footer upDownStatus={0} upDownAction={0} />
+      <Footer uDS={0} uDA={0} />
     </React.Fragment>
   )
 }

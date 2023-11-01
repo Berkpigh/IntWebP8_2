@@ -26,6 +26,7 @@ function Logement() {
   const logX = locationList[lInd]
   const tagArr = logX.tags
   const logRating = parseInt(logX.rating)
+  console.log('upupDownStatus: ', { upDownStatus })
   return (
     <div className="logement">
       <div className="logement-carousel">

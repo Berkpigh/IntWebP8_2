@@ -11,17 +11,47 @@ function Equipments({
   setuDA,
 }) {
   function inverseArrowPos() {
-    equiArr ? sequiArr(false) : sequiArr(true)
-    descArr === equiArr ? setuDA(0) : equiArr ? setuDA(2) : setuDA(1)
-    equiArr ? setuDS(1) : setuDS(0)
+    if (equiArr === true) {
+      sequiArr(false)
+      decideuDSuDA(false)
+    } else {
+      sequiArr(true)
+      decideuDSuDA(true)
+    }
   }
+  function decideuDSuDA(truefalse) {
+    if (truefalse === descArr) {
+      setuDA(0)
+      if (truefalse) {
+        setuDS(1)
+      } else {
+        setuDS(0)
+      }
+    } else {
+      if (truefalse) {
+        setuDS(1)
+        setuDA(1)
+      } else {
+        setuDS(0)
+        setuDA(2)
+      }
+    }
+  }
+
+  console.log('equipments descArr: ', descArr, 'equipments equiArr: ', equiArr)
+  console.log('equipments uDS: ', uDS, 'uDA: ', uDA)
+
   return (
     <React.Fragment>
       <div className="equipments">
         <div className="equipments-topbar">
           <p className="equipments-topbar__p">Equipments</p>
           <svg
-            className="equipments-topbar__svg"
+            className={
+              equiArr
+                ? 'equipments-topbar__svg equipments-topbar__svg-open'
+                : 'equipments-topbar__svg equipments-topbar__svg-closed'
+            }
             onClick={() => inverseArrowPos()}
             width="24"
             height="14"
