@@ -12,7 +12,7 @@
     }
     &-gap__1 {
         width: 1440px;
-        height: 200px;
+        height: 100px;
     }
     &-p {
     font-family: Montserrat;
@@ -21,11 +21,11 @@
     background: rgba(255, 255, 255, 1);
     }
     &-up {
-        //animation-name: footerup;
-        //animation-duration: 2000ms;
+        animation-name: footerup;
+        animation-duration: 2000ms;
     }
     &-down {
-        //animation-name: footerdown;
-        //animation-duration: 2000ms;
+        animation-name: footerdown;
+        animation-duration: 2000ms;
     }
 }

@@ -32,7 +32,7 @@ function Equipments({
         setuDS(1)
         setuDA(1)
       } else {
-        setuDS(0)
+        setuDS(1)
         setuDA(2)
       }
     }

@@ -11,9 +11,11 @@
             font-weight: 400;
             &__show {
                 display: block;
+                height: 176px;
             }
             &__hide {
                 display: none;
+                height: 0;
             }
         }
         &-topbar {
