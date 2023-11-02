@@ -1,5 +1,44 @@
 @keyframes description-show {
-    0% { height: 0;}
-    50% {height: 50px;}
-    100% {height: 176px;}
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(-100px);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-50px);
+    opacity: 0.3;
+  }
+  75% {
+    transform: translateY(-25px);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes equipments-show {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(-100px);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-50px);
+    opacity: 0.3;
+  }
+  75% {
+    transform: translateY(-25px);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }

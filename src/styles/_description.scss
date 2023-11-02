@@ -1,8 +1,9 @@
 .description {
+    margin-right: 20px;
     width: 582px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:flex-start;
     align-items: center;
         &-description {
             list-style-type: none;
@@ -10,14 +11,13 @@
             font-size: 18px;
             font-weight: 400;
             &__show {
-                display: block;
-                height: 176px;
+                display: inline-block;
+                position: inherit;
                 animation-name: description-show;
                 animation-duration: 2000ms;
             }
             &__hide {
                 display: none;
-                height: 0;
             }
         }
         &-topbar {

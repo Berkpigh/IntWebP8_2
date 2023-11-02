@@ -87,7 +87,9 @@ function Logement() {
           /
         </div>
       </div>
-      <Footer />
+      <div className="logement-footer">
+        <Footer />
+      </div>
     </div>
   )
 }
