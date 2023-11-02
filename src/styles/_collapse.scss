@@ -1,6 +1,6 @@
 .collapse {
     width: 1023px;
-    height: 298px;
+    height: 100px;
     &-frame2 {
         display: flex;
         justify-content: space-between;
@@ -11,6 +11,7 @@
         border-radius: 10px 10px 5px 5px;
         &__p1 {
             width: 956px;
+            height: 17px;
             font-family: Montserrat;
             font-size: 24px;
             font-weight: 500;
@@ -37,9 +38,11 @@
         }
         &__show {
             display: block;
+            height: 100px;
         }
         &__hide {
             display: none;
+            height: 100px;
         }
     }
 }

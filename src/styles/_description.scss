@@ -12,6 +12,8 @@
             &__show {
                 display: block;
                 height: 176px;
+                animation-name: description-show;
+                animation-duration: 2000ms;
             }
             &__hide {
                 display: none;

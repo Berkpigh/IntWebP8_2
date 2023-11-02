@@ -87,7 +87,7 @@ function Logement() {
           /
         </div>
       </div>
-      <Footer uDS={upDownStatus} uDA={upDownAction} />
+      <Footer />
     </div>
   )
 }

@@ -1,20 +1,10 @@
 import React from 'react'
 
-function Footer({ uDS, uDA }) {
-  console.log('uDS Footer: ', { uDS }, ' uDA Footer: ', { uDA })
+function Footer() {
   return (
     <React.Fragment>
       <div>
-        <div className={uDS === 0 ? 'footer-gap__0' : 'footer-gap__1'}></div>
-        <div
-          className={
-            uDA === 0
-              ? 'footer'
-              : uDA === 2
-              ? 'footer footer-down'
-              : 'footer footer-up'
-          }
-        >
+        <div className="footer">
           <svg
             width="122"
             height="40"

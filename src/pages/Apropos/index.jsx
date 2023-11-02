@@ -16,16 +16,18 @@ function Apropos() {
 
   return (
     <React.Fragment>
-      <div>
-        <Banner imag={apropimg} />
-      </div>
       <div className="apropo">
-        <Collapse collnum={0} title="Fiabilité" texto={Fiab} />
-        <Collapse collnum={1} title="Respect" texto={Resp} />
-        <Collapse collnum={2} title="Service" texto={Serv} />
-        <Collapse collnum={3} title="Sécurité" texto={Secu} />
+        <div>
+          <Banner imag={apropimg} />
+        </div>
+        <div className="apropo-collapse">
+          <Collapse collnum={0} title="Fiabilité" texto={Fiab} />
+          <Collapse collnum={1} title="Respect" texto={Resp} />
+          <Collapse collnum={2} title="Service" texto={Serv} />
+          <Collapse collnum={3} title="Sécurité" texto={Secu} />
+        </div>
+        <Footer />
       </div>
-      <Footer uDS={0} uDA={0} />
     </React.Fragment>
   )
 }
