@@ -10,11 +10,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.header-links {
-    text-decoration: none;
-    font-family: Montserrat;
-    font-weight: 500;
-    font-size: 24px;
-    color: rgba(255, 96, 96, 1);
+    &__home {
+        text-decoration: none;
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 24px;
+        color: rgba(255, 96, 96, 1);
+        &-u {
+            text-decoration: underline;
+        }
+    }
+    &__apropos {
+        text-decoration: none;
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 24px;
+        color: rgba(255, 96, 96, 1);
+        &-u {
+            text-decoration: underline;
+        }
+    }
 }
