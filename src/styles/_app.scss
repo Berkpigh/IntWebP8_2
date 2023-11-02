@@ -1,3 +1,10 @@
 #root {
-    height: 1517px;
+  height: 1517px;
+  width: 1440px;
+}
+@media screen and (max-width: 375px) {
+  #root {
+    height: 6000px;
+    width: 375px;
+  }
 }

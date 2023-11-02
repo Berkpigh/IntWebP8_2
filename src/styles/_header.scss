@@ -1,33 +1,87 @@
-.header-header {
+.header {
     margin-left: 100px;
-    width: 1240px;
+    width: 86.11%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.header-nav {
-    width: 309px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    &__home {
-        text-decoration: none;
-        font-family: Montserrat;
-        font-weight: 500;
-        font-size: 24px;
-        color: rgba(255, 96, 96, 1);
-        &-u {
-            text-decoration: underline;
+    &-svg {
+        width: 211px;
+        height: 68px;
+    }
+    &-nav {
+        width: 24.92%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__home {
+            text-decoration: none;
+            font-family: Montserrat;
+            font-weight: 500;
+            font-size: 24px;
+            color: rgba(255, 96, 96, 1);
+            &-u {
+                text-decoration: underline;
+            }
+        }
+        &__apropos {
+            text-decoration: none;
+            font-family: Montserrat;
+            font-weight: 500;
+            font-size: 24px;
+            color: rgba(255, 96, 96, 1);
+            &-u {
+                text-decoration: underline;
+            }
         }
     }
-    &__apropos {
-        text-decoration: none;
-        font-family: Montserrat;
-        font-weight: 500;
-        font-size: 24px;
-        color: rgba(255, 96, 96, 1);
-        &-u {
-            text-decoration: underline;
+}
+@media screen and (max-width: 375px) {
+    .header {
+        margin-left: 20px;
+        width: 335px;
+        height: 47px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-logo {
+            position: relative;
+            width: 100px;
+            height: 47px;
+            &__svg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: scale(0.3) translate(-340px, -140px);
+
+            }
+        }
+    }
+    .header-nav {
+        width: 190px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        &__home {
+            text-decoration: none;
+            text-transform:uppercase;
+            font-family: Montserrat;
+            font-weight: 500;
+            font-size: 12px;
+            color: rgba(255, 96, 96, 1);
+            &-u {
+                text-decoration: underline;
+            }
+        }
+        &__apropos {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: Montserrat;
+            font-weight: 500;
+            font-size: 12px;
+            color: rgba(255, 96, 96, 1);
+            &-u {
+                text-decoration: underline;
+            }
         }
     }
 }

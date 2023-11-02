@@ -6,10 +6,15 @@ import locationList from '../../data/vingtannonces.json'
 import homeimg from '../../assets/home.png'
 
 function Home() {
+  const pm = ['Chez vous,', <br />, 'partout et ailleurs']
   return (
     <React.Fragment>
       <div>
-        <Banner imag={homeimg} parag="Chez vous, partout et ailleurs" />
+        <Banner
+          imag={homeimg}
+          paragd="Chez vous, partout et ailleurs"
+          paragm={pm}
+        />
       </div>
       <div className="homecard">
         <ul className="homecard-ul">
