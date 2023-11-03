@@ -1,3 +1,11 @@
+@keyframes rotdown {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(180deg);}
+}
+@keyframes rotup {
+  0% {transform: rotate(180deg);}
+  100% {transform: rotate(0deg);}
+}
 @keyframes description-show {
   0% {
     transform: translateY(-200px);

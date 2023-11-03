@@ -1,6 +1,6 @@
 .collapse {
-    width: 1023px;
-    height: 100px;
+    width: 71.05%;
+    height: 150px;
     &-frame2 {
         display: flex;
         justify-content: space-between;
@@ -10,7 +10,7 @@
         background: rgba(255, 96, 96, 1);
         border-radius: 10px 10px 5px 5px;
         &__p1 {
-            width: 956px;
+            width: 63.39%;
             height: 17px;
             font-family: Montserrat;
             font-size: 24px;
@@ -30,7 +30,7 @@
         }
         &__p2 {
             left: 20px;
-            width: 1100px;
+            width: 76.39%;
             font-family: Montserrat;
             font-size: 18px;
             font-weight: 400;
@@ -46,11 +46,53 @@
         }
     }
 }
-@keyframes rotdown {
-    0% {transform: rotate(0deg);}
-    100% {transform: rotate(180deg);}
-}
-@keyframes rotup {
-    0% {transform: rotate(180deg);}
-    100% {transform: rotate(0deg);}
+@media screen and (max-width: 375px) {
+    .collapse {
+        width: 335px;
+        height: 120px;
+        &-frame2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 30px;
+            text-wrap: wrap;
+            background: rgba(255, 96, 96, 1);
+            border-radius: 10px 10px 5px 5px;
+            &__p1 {
+                width: 293px;
+                height: 17px;
+                font-family: Montserrat;
+                font-size: 12px;
+                font-weight: 500;
+                color: rgba(255, 255, 255, 1);
+                margin-block: 0;
+            }
+            &__svg {
+                width: 16px;
+                height: 9.14px;
+                transform-origin: center;
+                &-open {
+                    transform : rotate(0.5turn);
+                }
+                &-closed {
+                    transform : rotate(0turn);
+                }
+            }
+            &__p2 {
+                left: 20px;
+                width: 335px;
+                height: 17px;
+                font-family: Montserrat;
+                font-size: 12px;
+                font-weight: 400;
+                margin-block: 0;
+            }
+            &__show {
+                display: block;
+            }
+            &__hide {
+                display: none;
+            }
+        }
+    }
 }

@@ -25,6 +25,7 @@
 }
 @media screen and (max-width: 375px) {
     .footer {
+        margin-left: -20px;
         width: 375px;
         display: flex;
         flex-direction: column;
@@ -36,10 +37,14 @@
             height: 40px;
         }
         &-p {
+        width: 133.6px;
+        height: 46px;
         font-family: Montserrat;
         font-size: 12px;
         font-weight: 500;
-        background: rgba(255, 255, 255, 1);
+        line-height: 17.11px;
+        word-spacing: 5px;
+        color: rgba(255, 255, 255, 1);
         }
     }
 }

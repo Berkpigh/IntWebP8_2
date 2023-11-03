@@ -13,13 +13,14 @@ function Apropos() {
     'Le service fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.'
   const Secu =
     "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
+  const pm = []
 
   return (
     <React.Fragment>
+      <div>
+        <Banner imag={apropimg} paragd="" paragm={pm} />
+      </div>
       <div className="apropo">
-        <div>
-          <Banner imag={apropimg} />
-        </div>
         <div className="apropo-collapse">
           <Collapse collnum={0} title="Fiabilité" texto={Fiab} />
           <Collapse collnum={1} title="Respect" texto={Resp} />
