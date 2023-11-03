@@ -1,13 +1,13 @@
 .apropo {
     margin-left: 100px;
     width: 86.11%;
-    height: 839px;
+    height: 979px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     &-collapse {
         margin: 40px 0 40px 200px;
-        height: 620px;
+        //height: 620px;
         background: rgba(246, 246, 246, 1);
     }
 }
@@ -15,14 +15,14 @@
     .apropo {
         margin-left: 20px;
         width: 335px;
-        height: 851px;
+        height: 759px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         &-collapse {
             margin: 10px 0 10px 0px;
             width: 335px;
-            height: 491px;
+            //height: 480px;
             background: rgba(246, 246, 246, 1);
         }
     }
