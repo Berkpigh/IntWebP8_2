@@ -1,11 +1,17 @@
 body {
+  max-width: 1440px;
+  margin: auto;
   display: flex;
   justify-content: center;
-}
-#root {
-  height: 1517px;
-  width: 1440px;
-}
-@media screen and (max-width: 375px) {
+  padding: 0 100px 0 100px;
+  @media screen and (max-width: 375px) {
+    padding: 0 20px 0 20px;
 
+  }
+}
+p, li {
+  font-family: Montserrat;
+}
+ul {
+  list-style-type: none;
 }

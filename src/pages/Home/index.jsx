@@ -9,27 +9,25 @@ function Home() {
   const pm = ['Chez vous,', <br />, 'partout et ailleurs']
   return (
     <React.Fragment>
-      <div>
+      <div className="home">
         <Banner
           imag={homeimg}
           paragd="Chez vous, partout et ailleurs"
           paragm={pm}
         />
+        <div className="home-card">
+          <ul className="home-card-ul">
+            {locationList.map(({ id, title }) => (
+              <Link to={`/Logement/${id}`} className="home-card-ul__a">
+                <li className="home-card-ul__li" key={id}>
+                  <p className="home-card-ul__li-p">{title}</p>
+                </li>
+              </Link>
+            ))}
+          </ul>
+        </div>
       </div>
-      <div className="homecard">
-        <ul className="homecard-ul">
-          {locationList.map(({ id, title }) => (
-            <Link to={`/Logement/${id}`} className="homecard-ul__a">
-              <li className="homecard-ul__li" key={id}>
-                <p className="homecard-ul__li-p">{title}</p>
-              </li>
-            </Link>
-          ))}
-        </ul>
-      </div>
-      <div>
-        <Footer />
-      </div>
+      <Footer />
     </React.Fragment>
   )
 }
