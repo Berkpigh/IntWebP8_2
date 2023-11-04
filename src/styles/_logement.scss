@@ -1,74 +1,71 @@
 .logement {
-    width: 1240px;
-    height: 880px;
+    width: 100%;
     &-carousel {
-        width: 1240px;
+        position: relative;
+        width: 98.4126%;
         height: 415px;
-        margin: 50px 0 0 100px;
+        margin-top: 50px;
+        padding: 0 10px 0 10px;
         &__img {
+            position: absolute;
             top: 0;
             left: 0;
-            width: 1240px;
+            width: 100%;
             height: 415px;
             object-fit: cover;
+            border-radius: 25px;
             z-index: -1;
         }
         &__leftar {
-            position: relative;
-            top: -250px;
+            position: absolute;
+            top: 200px;
             width: 96px;
             z-index: 1;
         }
         &__rightar {
-            position: relative;
-            top: -320px;
+            position: absolute;
+            top: 195px;
             width: 96px;
-            left: 1144px;
+            left: 95.5%;
             z-index: 1;
         }
         &__p {
-            position: relative;
-            top: -220px;
-            left: 607px;
+            position: absolute;
+            top: 360px;
+            left: 48.95%;
             width: 24px;
-            font-family: Montserrat;
             font-size: 18px;
-            font-weight: 500;
+            line-height: 25.67px;
+            font-weight: 700;
             text-align: center;
             color: rgba(255, 255, 255, 1);
             z-index: 1;
         }
     }
     &-section {
-        margin-left: 100px;
-        height: 228px;
-        width: 1240px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content:flex-start;
         align-items: center;
+        margin-bottom: 20px;
         &__l1 {
-            width: 1240px;
-            //height: 77px;
+            width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 20px;
+            margin: 20px  0 20px 0;
             &-tit {
-                width: 1000px;
+                width: 95%;
                 height: 77px;
             }
             &-tit1 {
-                width: 1000px;
-                font-family: Montserrat;
                 font-size: 36px;
                 font-weight: 500;
                 color: rgba(255, 96, 96, 1);
                 margin-block: 0;
             }
             &-tit2 {
-                width: 176px;
-                font-family: Montserrat;
                 font-size: 18px;
                 font-weight: 500;
                 color: rgba(255, 96, 96, 1);
@@ -83,7 +80,6 @@
                 &-name {
                     width: 93px;
                     height: 52px;
-                    font-family: Montserrat;
                     font-size: 18px;
                     font-weight: 500;
                     color: rgba(255, 96, 96, 1);
@@ -98,11 +94,11 @@
             }
         }
         &__l2 {
-            width: 1240px;
-            //height: 25px;
+            width: 100%;
             display: flex;
             justify-content: space-between;
             align-items:center;
+            margin: 0  0 20px 0;
             &-tags {
                 width: 365px;
                 height: 25px;
