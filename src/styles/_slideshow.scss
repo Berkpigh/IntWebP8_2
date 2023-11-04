@@ -46,7 +46,7 @@
     width: 100%;
     height: 255px;
     margin-top: 20px;
-    &__img {
+    &-img {
       position: absolute;
       top: 0;
       left: 0;
@@ -56,7 +56,7 @@
       border-radius: 10px;
       z-index: -1;
     }
-    &__leftar {
+    &-leftar {
       position: absolute;
       top: 120px;
       left: 8px;
@@ -64,7 +64,7 @@
       height: 24px;
       z-index: 1;
     }
-    &__rightar {
+    &-rightar {
       position: absolute;
       top: 115px;
       left: 95%;
@@ -72,7 +72,7 @@
       height: 24px;
       z-index: 1;
     }
-    &__p {
+    &-p {
       display: none;
     }
   }

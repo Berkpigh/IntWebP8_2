@@ -30,7 +30,7 @@ function Logement() {
   return (
     <div>
       <div className="logement">
-        <div className="logement-carousel">
+        <div>
           <Slideshow pA={logX.pictures} />
         </div>
         <div className="logement-section">
@@ -85,7 +85,6 @@ function Logement() {
               uDA={upDownAction}
               setuDA={setupDownAction}
             />
-            /
           </div>
         </div>
       </div>
