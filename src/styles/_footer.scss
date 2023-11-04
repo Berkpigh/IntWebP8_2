@@ -26,26 +26,29 @@
 }
 @media screen and (max-width: 375px) {
     .footer {
+        position: relative;
         margin-left: -20px;
-        width: 375px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        width: 110.67%;
+        display: block;
         background: rgba(0, 0, 0, 1);
         &-svg {
+            position: absolute;
+            top: 60px;
+            left: 120px;
             width: 122px;
             height: 40px;
         }
         &-p {
-        width: 133.6px;
-        height: 46px;
-        font-family: Montserrat;
-        font-size: 12px;
-        font-weight: 500;
-        line-height: 17.11px;
-        word-spacing: 5px;
-        color: rgba(255, 255, 255, 1);
+            position: absolute;
+            top: 85px;
+            left: 120px;
+            width: 133.6px;
+            height: 46px;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 17.11px;
+            word-spacing: 5px;
+            color: rgba(255, 255, 255, 1);
         }
     }
 }
