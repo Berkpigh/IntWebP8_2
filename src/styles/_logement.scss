@@ -1,188 +1,84 @@
 .logement {
-  width: 100%;
-
-  &-section {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 20px;
-    &__l1 {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: 20px 0 20px 0;
-      &-tit {
-        width: 95%;
-        height: 77px;
-      }
-      &-tit1 {
-        font-size: 36px;
-        font-weight: 500;
-        color: rgba(255, 96, 96, 1);
-        margin-block: 0;
-      }
-      &-tit2 {
-        font-size: 18px;
-        font-weight: 500;
-        color: rgba(255, 96, 96, 1);
-        margin-block: 0;
-      }
-      &-host {
-        width: 167px;
-        height: 64px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        &-name {
-          width: 93px;
-          height: 52px;
-          font-size: 18px;
-          font-weight: 500;
-          color: rgba(255, 96, 96, 1);
-          margin-block: 0;
-        }
-        &-img {
-          width: 64px;
-          height: 64px;
-          border-radius: 50%;
-          object-fit: cover;
-        }
-      }
-    }
-    &__l2 {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: 0 0 20px 0;
-      &-tags {
-        width: 365px;
-        height: 25px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-      }
-      &-rate {
-        width: 196px;
-        height: 36px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-    }
-    &__l3 {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items:flex-start;
-      &-rate {
-        display: none;
-      }
-      &-host {
-        display: none;
-      }
-      &-descequi {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    }
-  }
-}
-@media screen and (max-width: 375px) {
-  .logement {
-    width: 89.34%;
     &-section {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      margin-bottom: 20px;
-      &__l1 {
-        width: 100%;
-        display: block;
-        margin: 20px 0 20px 0;
-        &-tit1 {
-          font-size: 18px;
-          font-weight: 500;
-          line-height: 25.67px;
-          color: rgba(255, 96, 96, 1);
-          margin-block: 0;
-        }
-        &-tit2 {
-          font-size: 14px;
-          font-weight: 500;
-          line-height: 19.96px;
-          color: rgba(255, 96, 96, 1);
-          margin-block: 0;
-        }
-        &-host {
-          display: none;
-        }
-      }
-      &__l2 {
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content:flex-start;
         align-items: center;
-        margin: 0 0 20px 0;
-        &-tags {
-          width: 365px;
-          height: 25px;
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-        }
-        &-rate {
-          display: none;
-        }
-      }
-      &__l3 {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        &-rate {
-            width: 96px;
-            height: 18px;
+        margin-bottom: 20px;
+        &__l1 {
+            width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin: 20px  0 20px 0;
+            &-tit {
+                width: 95%;
+                height: 77px;
+            }
+            &-tit1 {
+                font-size: 36px;
+                font-weight: 500;
+                color: rgba(255, 96, 96, 1);
+                margin-block: 0;
+            }
+            &-tit2 {
+                font-size: 18px;
+                font-weight: 500;
+                color: rgba(255, 96, 96, 1);
+                margin-block: 0;
+            }
+            &-host {
+                width: 167px;
+                height: 64px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &-name {
+                    width: 93px;
+                    height: 52px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: rgba(255, 96, 96, 1);
+                    margin-block: 0;
+                }
+                &-img {
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
         }
-        &-host {
-          width: 135.5px;
-          height: 33px;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          &-name {
-            width: 93px;
-            height: 33px;
-            font-size: 12px;
-            font-weight: 500;
-            line-height: 17.11px;
-            color: rgba(255, 96, 96, 1);
-            margin-block: 0;
-          }
-          &-img {
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            object-fit: cover;
-          }
+        &__l2 {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+            margin: 0  0 20px 0;
+            &-tags {
+                width: 365px;
+                height: 25px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            &-rate {
+                width: 196px;
+                height: 36px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }         
         }
-        &-descequi {
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          align-items: center;
+        &__l3 {
+            width: 1240px;
+            //height: 52px;
+            display: flex;
+            justify-content: center;
+            align-items: top;             
         }
- 
-      }
     }
-  }
+
 }
