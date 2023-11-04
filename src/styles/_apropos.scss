@@ -1,14 +1,17 @@
 .apropo {
-    margin-left: 100px;
-    width: 86.11%;
-    height: 979px;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     &-collapse {
-        margin: 40px 0 40px 200px;
-        //height: 620px;
-        background: rgba(246, 246, 246, 1);
+        width: 82.5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+            &__list {
+                margin: 40px 0 40px 0;
+                background: rgba(246, 246, 246, 1);
+        }
     }
 }
 @media screen and (max-width: 375px) {

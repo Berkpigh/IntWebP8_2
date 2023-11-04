@@ -1,6 +1,17 @@
 .collapse {
-    width: 71.05%;
-    //height: 62px;
+    margin-bottom: 10px;
+    &-p2 {
+        font-size: 18px;
+        font-weight: 400;
+        margin-block: 0;
+        color: rgba(255, 96, 96, 1);
+        &__show {
+            display:contents;
+        }
+        &__hide {
+            display: none;
+        }
+    }
     &-frame2 {
         display: flex;
         justify-content: space-between;
@@ -9,10 +20,10 @@
         text-wrap: wrap;
         background: rgba(255, 96, 96, 1);
         border-radius: 10px 10px 5px 5px;
+        padding: 0 10px 0 10px;
         &__p1 {
             width: 63.39%;
-            height: 17px;
-            font-family: Montserrat;
+            line-height: 34.22px;
             font-size: 24px;
             font-weight: 500;
             color: rgba(255, 255, 255, 1);
@@ -27,22 +38,6 @@
             &-closed {
                 transform : rotate(0turn);
             }
-        }
-        &__p2 {
-            left: 20px;
-            width: 76.39%;
-            font-family: Montserrat;
-            font-size: 18px;
-            font-weight: 400;
-            margin-block: 0;
-        }
-        &__show {
-            display: block;
-            height: 100px;
-        }
-        &__hide {
-            display: none;
-            height: 100px;
         }
     }
 }

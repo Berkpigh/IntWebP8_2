@@ -6,7 +6,6 @@ function Collapse({ collnum, title, texto }) {
   const [isOpen1, setOP1] = useState(false)
   const [isOpen2, setOP2] = useState(false)
   const [isOpen3, setOP3] = useState(false)
-  const [isOpenArrow, setOpenArrow] = useState(false)
   var ostat = false
   var astat = false
 
@@ -77,8 +76,8 @@ function Collapse({ collnum, title, texto }) {
         <p
           className={
             ostat
-              ? 'collapse-frame2__p2 collapse-frame2__show'
-              : 'collapse-frame2__p2 collapse-frame2__hide'
+              ? 'collapse-p2 collapse-p2__show'
+              : 'collapse-p2 collapse-p2__hide'
           }
         >
           {texto}
