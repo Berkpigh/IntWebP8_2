@@ -31,9 +31,7 @@ function Logement() {
   return (
     <React.Fragment>
       <div className="logement">
-        <div className="logement-carousel">
-          <Slideshow pA={logX.pictures} />
-        </div>
+        <Slideshow pA={logX.pictures} />
         <div className="logement-section">
           <div className="logement-section__l1">
             <div className="logement-section__l1-tit">
@@ -66,7 +64,7 @@ function Logement() {
             </div>
           </div>
           <div className="logement-section__l3">
-            <div className="logement-section__l3-rate">
+            {/* <div className="logement-section__l3-rate">
               <LogRating starNum={0} lr={logRating} />
               <LogRating starNum={1} lr={logRating} />
               <LogRating starNum={2} lr={logRating} />
@@ -80,28 +78,33 @@ function Logement() {
                 alt="host"
                 className="logement-section__l3-host-img"
               />
+            </div> */}
+          </div>
+          <div className="logement-section__l3-descequi">
+            <div>
+              <Description
+                desc={logX.description}
+                descArr={descArrowDown}
+                sdescArr={setdescArrow}
+                equiArr={equiArrowDown}
+                uDS={upDownStatus}
+                setuDS={setupDownStatus}
+                uDA={upDownAction}
+                setuDA={setupDownAction}
+              />
             </div>
-            <Description
-              desc={logX.description}
-              descArr={descArrowDown}
-              sdescArr={setdescArrow}
-              equiArr={equiArrowDown}
-              uDS={upDownStatus}
-              setuDS={setupDownStatus}
-              uDA={upDownAction}
-              setuDA={setupDownAction}
-            />
-            <Equipments
-              equi={logX.equipments}
-              equiArr={equiArrowDown}
-              sequiArr={setequiArrow}
-              descArr={descArrowDown}
-              uDS={upDownStatus}
-              setuDS={setupDownStatus}
-              uDA={upDownAction}
-              setuDA={setupDownAction}
-            />
-            /
+            <div>
+              <Equipments
+                equi={logX.equipments}
+                equiArr={equiArrowDown}
+                sequiArr={setequiArrow}
+                descArr={descArrowDown}
+                uDS={upDownStatus}
+                setuDS={setupDownStatus}
+                uDA={upDownAction}
+                setuDA={setupDownAction}
+              />
+            </div>
           </div>
         </div>
       </div>
