@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Banner from '../../components/Banner'
-import Footer from '../../components/Footer'
 import locationList from '../../data/vingtannonces.json'
 import homeimg from '../../assets/home.png'
 
@@ -27,7 +26,6 @@ function Home() {
           </ul>
         </div>
       </div>
-      <Footer />
     </React.Fragment>
   )
 }

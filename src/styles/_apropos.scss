@@ -1,5 +1,6 @@
 .apropo {
-    width: 100%;
+    width: 86.11%;
+    margin: 0 100px 0 100px;
     &-collapse {
         width: 100%;
         display: flex;
@@ -16,6 +17,7 @@
 @media screen and (max-width: 375px) {
     .apropo {
         width: 89.34%;
+        margin: 0 20px 0 20px;
         &-collapse {
             width: 100%;
             display: flex;

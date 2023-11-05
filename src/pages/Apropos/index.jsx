@@ -1,7 +1,6 @@
 import React from 'react'
 import Banner from '../../components/Banner'
 import Collapse from '../../components/Collapse'
-import Footer from '../../components/Footer'
 import apropimg from '../../assets/Aprop.png'
 
 function Apropos() {
@@ -28,7 +27,6 @@ function Apropos() {
           </div>
         </div>
       </div>
-      <Footer />
     </React.Fragment>
   )
 }

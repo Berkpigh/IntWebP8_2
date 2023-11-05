@@ -1,12 +1,13 @@
 .home {
-  width: 100%;
+  width: 86.11%;
   height: 2920px;
+  margin: 0 100px 0 100px;
   &-card {
     display: flex;
     justify-content: space-between;
     background: rgba(246, 246, 246, 1);
     &-ul {
-      margin-left: 22px;
+      margin: 0 22px 0 22px;
       display: flex;
       flex-wrap: wrap;
       &__a {
@@ -39,6 +40,7 @@
   .home {
     width: 89.34%;
     height: 5610px;
+    margin: 0 20px 0 20px;
     &-card {
       width: 100%;
       display: flex;
@@ -46,7 +48,7 @@
       background: rgba(246, 246, 246, 1);
       &-ul {
         width: 100%;
-        margin-left: 0;
+        margin: 0;
         display: flex;
         flex-wrap: wrap;
         &__a {
