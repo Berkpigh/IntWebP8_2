@@ -4,8 +4,8 @@ function LogRating({ starNum, lr }) {
     <div className="ratingsquare">
       {{ starNum }.starNum < { lr }.lr ? (
         <svg
-          width="25"
-          height="24"
+          /*  width="25"
+          height="24" */
           viewBox="0 0 25 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -17,8 +17,8 @@ function LogRating({ starNum, lr }) {
         </svg>
       ) : (
         <svg
-          width="36"
-          height="36"
+          /*   width="36"
+          height="36" */
           viewBox="0 0 36 36"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

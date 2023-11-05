@@ -1,5 +1,4 @@
 .equipments {
-    margin-left: 20px;
     width: 46.94%;
     display: flex;
     flex-direction: column;
@@ -21,7 +20,7 @@
             }
         }
         &-topbar {
-        width: 100%;
+        width: 95%;
         height: 32px;
         background: rgba(255, 96, 96, 1);
         display: flex;
@@ -52,7 +51,6 @@
 }
 @media screen and (max-width: 375px) {
     .equipments {
-        margin-left: 0;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -74,7 +72,7 @@
                 }
             }
             &-topbar {
-            //width: 100%;
+            width: 95%;
             height: 30px;
             background: rgba(255, 96, 96, 1);
             display: flex;

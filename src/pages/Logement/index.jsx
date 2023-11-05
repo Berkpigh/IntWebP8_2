@@ -63,6 +63,45 @@ function Logement() {
           </div>
         </div>
         <div className="logement-section__l3">
+          <div className="logement-section__l3-details">
+            <Description
+              desc={logX.description}
+              descArr={descArrowDown}
+              sdescArr={setdescArrow}
+              equiArr={equiArrowDown}
+              uDS={upDownStatus}
+              setuDS={setupDownStatus}
+              uDA={upDownAction}
+              setuDA={setupDownAction}
+            />
+            <Equipments
+              equi={logX.equipments}
+              equiArr={equiArrowDown}
+              sequiArr={setequiArrow}
+              descArr={descArrowDown}
+              uDS={upDownStatus}
+              setuDS={setupDownStatus}
+              uDA={upDownAction}
+              setuDA={setupDownAction}
+            />
+          </div>
+          <div className="logement-section__l3-rate">
+            <LogRating starNum={0} lr={logRating} />
+            <LogRating starNum={1} lr={logRating} />
+            <LogRating starNum={2} lr={logRating} />
+            <LogRating starNum={3} lr={logRating} />
+            <LogRating starNum={4} lr={logRating} />
+          </div>
+          <div className="logement-section__l3-host">
+            <p className="logement-section__l3-host-name">{logX.host.name}</p>
+            <img
+              src={logX.host.picture}
+              alt="host"
+              className="logement-section__l3-host-img"
+            />
+          </div>
+        </div>
+        <div className="logement-section__l4">
           <Description
             desc={logX.description}
             descArr={descArrowDown}
