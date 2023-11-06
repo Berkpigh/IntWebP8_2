@@ -69,15 +69,17 @@ function Description({
             />
           </svg>
         </div>
-        <p
-          className={
-            descArr
-              ? 'description-description description-description__show'
-              : 'description-description description-description__hide'
-          }
-        >
-          {desc}
-        </p>
+        <div className="description-b">
+          <p
+            className={
+              descArr
+                ? 'description-b-description description-b-description__show'
+                : 'description-b-description description-b-description__hide'
+            }
+          >
+            {desc}
+          </p>
+        </div>
       </div>
     </React.Fragment>
   )

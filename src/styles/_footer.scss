@@ -8,12 +8,12 @@
     background: rgba(0, 0, 0, 1);
     padding: 50px 0 0 0;
     &-svg {
-        width: 122px;
+        width: 8.47%;
         height: 40px;
     }
     &-p {
         padding: 25px 0 0 0;
-        width: 513px;
+        width: 35.63;
         height: 46px;
         font-family: Montserrat;
         font-size: 24px;
@@ -26,21 +26,21 @@
 @media screen and (max-width: 375px) {
     .footer {
         position: relative;
-        width: 99.5%;
+        width: 100%;
         display: block;
         background: rgba(0, 0, 0, 1);
         &-svg {
             position: absolute;
             top: 60px;
-            left: 120px;
-            width: 122px;
+            left: 32%;
+            width: 32.54%;
             height: 40px;
         }
         &-p {
             position: absolute;
             top: 85px;
-            left: 120px;
-            width: 133.6px;
+            left: 31%;
+            width: 35.63%;
             height: 46px;
             font-size: 12px;
             font-weight: 500;

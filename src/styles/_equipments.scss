@@ -1,103 +1,104 @@
 .equipments {
-    width: 46.94%;
+  width: 46.94%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  &-equipments {
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(255, 96, 96, 1);
+    &__show {
+      display: inline-block;
+      animation-name: description-show;
+      animation-duration: 2000ms;
+      background: rgba(255, 255, 255, 1);
+    }
+    &__hide {
+      display: none;
+    }
+  }
+  &-topbar {
+    width: 95%;
+    height: 32px;
+    background: rgba(255, 96, 96, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 5px 5px;
+    padding: 10px 20px 10px 10px;
+    &__p {
+      width: 100%;
+      height: 32px;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 1);
+      margin-block: 0;
+    }
+    &__svg {
+      width: 32px;
+      height: 32px;
+      &-open {
+        transform: rotate(0.5turn);
+      }
+      &-closed {
+        transform: rotate(0turn);
+      }
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .equipments {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-        &-equipments {
-            list-style-type: none;
-            font-size: 18px;
-            font-weight: 400;
-            color: rgba(255, 96, 96, 1);
-            &__show {
-                display: inline-block;
-                animation-name: description-show;
-                animation-duration: 2000ms;
-                background: rgba(255, 255, 255, 1);
-            }
-            &__hide {
-                display: none;
-            }
-        }
-        &-topbar {
-        width: 95%;
+    &-equipments {
+      list-style-type: none;
+      font-size: 12px;
+      font-weight: 400;
+      color: rgba(255, 96, 96, 1);
+      &__show {
+        display: inline-block;
+        animation-name: description-show;
+        animation-duration: 2000ms;
+        background: rgba(255, 255, 255, 1);
+      }
+      &__hide {
+        display: none;
+      }
+    }
+    &-topbar {
+      width: 95%;
+      height: 30px;
+      background: rgba(255, 96, 96, 1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      padding: 10px 10px 10px 10px;
+      &__p {
+        width: 80%;
+        //height: 32px;
+        font-size: 13px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 1);
+        margin-block: 0;
+      }
+      &__svg {
+        width: 32px;
         height: 32px;
-        background: rgba(255, 96, 96, 1);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px 10px 5px 5px;
-        padding: 10px 20px 10px 10px;
-        &__p {
-            width: 100%;
-            height: 32px;
-            font-family: Montserrat;
-            font-size: 18px;
-            font-weight: 500;
-            color: rgba(255, 255, 255, 1);
-            margin-block: 0;
+        &-open {
+          transform: rotate(0.5turn);
         }
-        &__svg {
-            width: 32px;
-            height: 32px;
-            &-open {
-                transform : rotate(0.5turn);
-            }
-            &-closed {
-                transform : rotate(0turn);
-            }
+        &-closed {
+          transform: rotate(0turn);
         }
+      }
     }
-}
-@media screen and (max-width: 375px) {
-    .equipments {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-            &-equipments {
-                list-style-type: none;
-                font-size: 12px;
-                font-weight: 400;
-                color: rgba(255, 96, 96, 1);
-                &__show {
-                    display: inline-block;
-                    animation-name: description-show;
-                    animation-duration: 2000ms;
-                    background: rgba(255, 255, 255, 1);
-                }
-                &__hide {
-                    display: none;
-                }
-            }
-            &-topbar {
-            width: 95%;
-            height: 30px;
-            background: rgba(255, 96, 96, 1);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 5px;
-            padding: 10px 10px 10px 10px;
-            &__p {
-                width: 80%;
-                //height: 32px;
-                font-size: 13px;
-                font-weight: 500;
-                color: rgba(255, 255, 255, 1);
-                margin-block: 0;
-            }
-            &__svg {
-                width: 32px;
-                height: 32px;
-                &-open {
-                    transform : rotate(0.5turn);
-                }
-                &-closed {
-                    transform : rotate(0turn);
-                }
-            }
-        }
-    }
+  }
 }

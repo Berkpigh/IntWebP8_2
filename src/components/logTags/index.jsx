@@ -1,7 +1,9 @@
 function LogTags({ tg }) {
   return (
     <div className="logtags">
-      <p className="logtags-p">{tg}</p>
+      <div className="logtags-container">
+        <p className="logtags-container__p">{tg}</p>
+      </div>
     </div>
   )
 }

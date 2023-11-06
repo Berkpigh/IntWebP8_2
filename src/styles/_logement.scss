@@ -1,6 +1,6 @@
 .logement {
   width: 86.11%;
-  margin: 0 100px 0 100px;
+  margin: 0 6.94% 0 6.94%;
   &-section {
     width: 100%;
     display: flex;
@@ -59,10 +59,10 @@
       align-items: center;
       margin-top: 20px;
       &-tags {
-        width: 365px;
+        width: 42%;
         height: 25px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
       }
       &-rate {
@@ -96,7 +96,7 @@
 @media screen and (max-width: 375px) {
   .logement {
     width: 89.2%;
-    margin: 0 20px 0 20px;
+    margin: 0 5.34% 0 5.34%;
     &-section {
       width: 100%;
       display: flex;
@@ -133,14 +133,14 @@
         }
       }
       &__l2 {
+        display: flex;
+        justify-content: left;
+        align-items: center;
         width: 100%;
         margin-top: 15px;
         &-tags {
-            width: 30%;
+          width: 99%;
           height: 25px;
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
         }
         &-rate {
           display: none;
