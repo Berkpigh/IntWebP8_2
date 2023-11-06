@@ -11,7 +11,7 @@ function Error() {
             Oups! La page que vous demandez n'existe pas.
           </p>
           <p className="error-frame__p2-m">
-            Oups! La page que vous demandez n'existe pas.
+            Oups! La page que<br></br>vous demandez n'existe pas.
           </p>
           <Link to="/" className="error-frame__back">
             <p className="error-frame__back-p">

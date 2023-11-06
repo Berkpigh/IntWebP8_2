@@ -1,90 +1,96 @@
 .collapse {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
+  &-b {
+    padding: 0 20px 0 20px;
     &-p2 {
-        font-size: 18px;
+      font-size: 18px;
+      font-weight: 400;
+      margin-block: 0;
+      color: rgba(255, 96, 96, 1);
+      &__show {
+        display: contents;
+      }
+      &__hide {
+        display: none;
+      }
+    }
+  }
+  &-frame2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 52px;
+    text-wrap: wrap;
+    background: rgba(255, 96, 96, 1);
+    border-radius: 10px 10px 5px 5px;
+    padding: 0 10px 0 10px;
+    &__p1 {
+      width: 63.39%;
+      line-height: 34.22px;
+      font-size: 24px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 1);
+      margin-block: 0;
+    }
+    &__svg {
+      width: 30px;
+      transform-origin: center;
+      &-open {
+        transform: rotate(0.5turn);
+      }
+      &-closed {
+        transform: rotate(0turn);
+      }
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .collapse {
+    margin-bottom: 10px;
+    &-b {
+      padding-left: 20px;
+      &-p2 {
+        font-size: 12px;
         font-weight: 400;
         margin-block: 0;
         color: rgba(255, 96, 96, 1);
         &__show {
-            display:contents;
+          display: contents;
         }
         &__hide {
-            display: none;
+          display: none;
         }
+      }
     }
     &-frame2 {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 52px;
-        text-wrap: wrap;
-        background: rgba(255, 96, 96, 1);
-        border-radius: 10px 10px 5px 5px;
-        padding: 0 10px 0 10px;
-        &__p1 {
-            width: 63.39%;
-            line-height: 34.22px;
-            font-size: 24px;
-            font-weight: 500;
-            color: rgba(255, 255, 255, 1);
-            margin-block: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 30px;
+      text-wrap: wrap;
+      background: rgba(255, 96, 96, 1);
+      border-radius: 10px 10px 5px 5px;
+      padding: 0 5px 0 5px;
+      &__p1 {
+        width: 63.39%;
+        line-height: 34.22px;
+        font-size: 13px;
+        line-height: 18.54px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 1);
+        margin-block: 0;
+      }
+      &__svg {
+        width: 32px;
+        height: 32px;
+        transform-origin: center;
+        &-open {
+          transform: rotate(0.5turn);
         }
-        &__svg {
-            width: 30px;
-            transform-origin: center;
-            &-open {
-                transform : rotate(0.5turn);
-            }
-            &-closed {
-                transform : rotate(0turn);
-            }
+        &-closed {
+          transform: rotate(0turn);
         }
+      }
     }
-}
-@media screen and (max-width: 375px) {
-    .collapse {
-        margin-bottom: 10px;
-        &-p2 {
-            font-size: 12px;
-            font-weight: 400;
-            margin-block: 0;
-            color: rgba(255, 96, 96, 1);
-            &__show {
-                display:contents;
-            }
-            &__hide {
-                display: none;
-            }
-        }
-        &-frame2 {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 30px;
-            text-wrap: wrap;
-            background: rgba(255, 96, 96, 1);
-            border-radius: 10px 10px 5px 5px;
-            padding: 0 5px 0 5px;
-            &__p1 {
-                width: 63.39%;
-                line-height: 34.22px;
-                font-size: 13px;
-                line-height: 18.54px;
-                font-weight: 500;
-                color: rgba(255, 255, 255, 1);
-                margin-block: 0;
-            }
-            &__svg {
-                width: 32px;
-                height: 32px;
-                transform-origin: center;
-                &-open {
-                    transform : rotate(0.5turn);
-                }
-                &-closed {
-                    transform : rotate(0turn);
-                }
-            }
-        }
-    }
+  }
 }
