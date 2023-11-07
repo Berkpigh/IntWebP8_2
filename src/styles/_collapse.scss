@@ -8,9 +8,15 @@
       margin-block: 0;
       color: rgba(255, 96, 96, 1);
       &__show {
-        display: contents;
+        animation-name: showtext;
+        animation-duration: 2000ms;
+        animation-timing-function: cubic-bezier(0.67, 0.14, 0.18, .61);
+        //display: contents;
       }
       &__hide {
+        animation-name: hidetext;
+        animation-duration: 2000ms;
+        animation-timing-function: cubic-bezier(0.67, 0.14, 0.18, .61);
         display: none;
       }
     }
@@ -36,9 +42,15 @@
       width: 30px;
       transform-origin: center;
       &-open {
+        animation-name: arrowdown;
+        animation-duration: 1500ms;
+        animation-timing-function: cubic-bezier(0.67, 0.14, 0.18, .61);
         transform: rotate(0.5turn);
-      }
+        }
       &-closed {
+        animation-name: arrowup;
+        animation-duration: 1500ms;
+        animation-timing-function: cubic-bezier(0.67, 0.14, 0.18, .61);
         transform: rotate(0turn);
       }
     }

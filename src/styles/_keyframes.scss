@@ -1,10 +1,38 @@
-@keyframes rotdown {
-  0% {transform: rotate(0deg);}
-  100% {transform: rotate(180deg);}
+@keyframes arrowdown {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(0.5turn);
+  }
 }
-@keyframes rotup {
-  0% {transform: rotate(180deg);}
-  100% {transform: rotate(0deg);}
+@keyframes arrowup {
+  0% {
+    transform: rotate(0.5turn);
+  }
+  100% {
+    transform: rotate(0turn);
+  }
+}
+@keyframes showtext {
+  0% {
+    opacity: 0;
+    block-size: 0%;
+  }
+  100% {
+    opacity: 1;
+    block-size: 100%;
+  }
+}
+@keyframes hidetext {
+  0% {
+    opacity: 1;}
+    //block-size: 100%;
+
+  100% {
+    opacity: 0;}
+    //block-size: 0%;
+
 }
 @keyframes description-show {
   0% {
