@@ -73,16 +73,10 @@ function Collapse({ collnum, title, texto }) {
             </g>
           </svg>
         </div>
-        <div className="collapse-b">
-          <p
-            className={
-              ostat
-                ? 'collapse-b-p2 collapse-b-p2__show'
-                : 'collapse-b-p2 collapse-b-p2__hide'
-            }
-          >
-            {texto}
-          </p>
+        <div
+          className={ostat ? 'collapse-b collapse-b__show' : 'collapse-b__hide'}
+        >
+          <p className="collapse-b collapse-b-p2">{texto}</p>
         </div>
       </div>
     </div>

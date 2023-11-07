@@ -65,17 +65,25 @@ function Equipments({
             />
           </svg>
         </div>
-        <ul
+        <div
           className={
             equiArr
-              ? 'equipments-equipments equipments-equipments__show'
-              : 'equipments-equipments equipments-equipments__hide'
+              ? 'equipments-b equipments-b-h100'
+              : 'equipments-b equipments-b-h0'
           }
         >
-          {equi.map((equi, index) => (
-            <li key={index}>{equi}</li>
-          ))}
-        </ul>
+          <ul
+            className={
+              equiArr
+                ? 'equipments-b-equipments equipments-b-equipments__show'
+                : 'equipments-b-equipments__hide'
+            }
+          >
+            {equi.map((equi, index) => (
+              <li key={index}>{equi}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     </React.Fragment>
   )

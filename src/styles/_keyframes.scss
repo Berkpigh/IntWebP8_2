@@ -15,45 +15,43 @@
   }
 }
 @keyframes showtext {
-  0% {
+  0% { transform: translateY(-10%);
     opacity: 0;
-    block-size: 0%;
   }
-  100% {
+  60% {opacity: 0;}
+  100% { transform: translateY(0%);
     opacity: 1;
-    block-size: 100%;
   }
 }
 @keyframes hidetext {
-  0% {
-    opacity: 1;}
-    //block-size: 100%;
-
-  100% {
-    opacity: 0;}
-    //block-size: 0%;
-
-}
-@keyframes description-show {
-  0% {
-    transform: translateY(-200px);
+  0% { transform: translateY(0%);
+    opacity: 1;
+  }
+  70% {opacity: 1;}
+  100% { transform: translateY(-100%);
     opacity: 0;
   }
-  20% {
-    transform: translateY(-100px);
-    opacity: 0.3;
+}
+@keyframes showblock {
+  0% {
+    transform: translateY(-10%);
+    opacity: 0;
   }
-  50% {
-    transform: translateY(-50px);
-    opacity: 0.3;
-  }
-  75% {
-    transform: translateY(-25px);
-    opacity: 0.3;
-  }
+  30% {opacity: 0;}
   100% {
-    transform: translateY(0px);
+    transform: translateY(0%);
     opacity: 1;
+  }
+}
+@keyframes hidelock {
+  0% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  70% {opacity: 1;}
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
   }
 }
 @keyframes equipments-show {

@@ -69,12 +69,18 @@ function Description({
             />
           </svg>
         </div>
-        <div className="description-b">
+        <div
+          className={
+            descArr
+              ? 'description-b description-b-h100'
+              : 'description-b description-b-h0'
+          }
+        >
           <p
             className={
               descArr
                 ? 'description-b-description description-b-description__show'
-                : 'description-b-description description-b-description__hide'
+                : 'description-b-description__hide'
             }
           >
             {desc}

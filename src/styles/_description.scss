@@ -6,6 +6,19 @@
   align-items: center;
   &-b {
     padding: 0 20px 0 20px;
+    border-radius: 10px;
+    background: rgba(246, 246, 246, 1);
+    &-h100 {
+      animation-name: showblock;
+      animation-duration: 1500ms;
+      animation-timing-function: cubic-bezier(0.67, 0.14, 0.18, 0.61);
+    }
+    &-h0 {
+      animation-name: hideblock;
+      animation-duration: 1500ms;
+      animation-timing-function: cubic-bezier(0.67, 0.14, 0.18, 0.61);
+      display: none;
+    }
     &-description {
       list-style-type: none;
       font-size: 18px;
@@ -14,12 +27,16 @@
       &__show {
         display: inline-block;
         position: inherit;
-        animation-name: description-show;
-        animation-duration: 2000ms;
-        background: rgba(255, 255, 255, 1);
+        animation-name: showtext;
+        animation-duration: 1500ms;
+        animation-timing-function: cubic-bezier(0.67, 0.14, 0.18, 0.61);
+        background: rgba(246, 246, 246, 1);
       }
       &__hide {
-        display: none;
+        opacity: 0;
+        animation-name: hidetext;
+        animation-duration: 2000ms;
+        animation-timing-function: cubic-bezier(0.67, 0.14, 0.18, 0.61);
       }
     }
   }
@@ -44,6 +61,7 @@
       width: 32px;
       height: 32px;
       transform-origin: center;
+      transition: transform 1000ms ease-in-out;
       &-open {
         transform: rotate(0.5turn);
       }
@@ -101,6 +119,7 @@
         width: 32px;
         height: 32px;
         transform-origin: center;
+        transition: transform 1000ms ease-in-out;
         &-open {
           transform: rotate(0.5turn);
         }
