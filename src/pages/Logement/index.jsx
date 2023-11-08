@@ -1,8 +1,9 @@
 import React from 'react'
-import { redirect } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 import { useState } from 'react'
 import locationList from '../../data/vingtannonces.json'
+import dummyList from '../../data/dummyannonces.json'
 import Slideshow from '../../components/Slideshow'
 import LogTags from '../../components/LogTags'
 import LogRating from '../../components/LogRating'
@@ -15,46 +16,46 @@ function Logement() {
   const [equiArrowDown, setequiArrow] = useState(false)
   const [upDownStatus, setupDownStatus] = useState(0)
   const [upDownAction, setupDownAction] = useState(0)
+  const navigate = useNavigate()
 
   const locmax = locationList.length
-  var logX = ''
-  var tagArr = ''
-  var logRating = ''
+  var logxInd = 0
+  var logX = dummyList[0]
+  var tagArr = logX.tags
+  var logRating = parseInt(logX.rating)
 
   function getLog() {
     for (let i = 0; i < locmax; i++) {
-      console.log({ logId }.logId)
-
       if (locationList[i].id === { logId }.logId) {
         return i
       }
     }
+    return locmax
   }
   function testLog() {
-    if (lInd >= locmax) {
+    if (logInd >= locmax) {
       return true
     }
-    logX = locationList[lInd]
-    tagArr = logX.tags
-    logRating = parseInt(logX.rating)
     return false
   }
-  function testRedirect() {
-    if (bErr === true) {
-      redirect('Error')
-    }
-  }
+
   console.log({ logId }.logId)
-  const lInd = getLog()
-  console.log(lInd, locmax)
+  const logInd = getLog()
+  console.log(logInd, locmax)
   const bErr = testLog()
-  console.log(bErr)
   console.log('upupDownStatus: ', { upDownStatus })
 
+  if (bErr === false) {
+    logxInd = logInd
+    logX = locationList[logxInd]
+    tagArr = logX.tags
+    logRating = parseInt(logX.rating)
+  }
+
   return (
-    <React.Fragment>
       <div>
-        {testRedirect()}
+        {(bErr === true) ? navigate("/Error") : 
+      <React.Fragment>
         <div>
           <Slideshow pA={logX.pictures} />
         </div>
@@ -151,8 +152,9 @@ function Logement() {
             />
           </div>
         </div>
+        </React.Fragment>
+      }
       </div>
-    </React.Fragment>
   )
 }
 export default Logement
